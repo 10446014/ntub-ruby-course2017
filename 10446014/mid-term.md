@@ -99,7 +99,11 @@ user_profile = {name: "kk", age: 18, blood_type: :b_negative}
 
 1. (10 分) 請簡述 `bundle install` 指令的用途。
 
+利用bundle install載入一些套件，像是bootstrap。
+
 2. (10 分) 請說明 `rails db:migrate` 這個指令的用途是什麼？
+
+將Migration 轉換成真正的表格
 
 3. (10 分) 假設某個 Controller 的程式碼如下：
 
@@ -119,7 +123,13 @@ end
 
 請問：
 - 第 3 行的 `@books` 前面的那個 `@` 是什麼意思？如果把 `@` 拿掉會發生什麼事？
+
+前面加了一個@表示是實體變數，如果將@拿掉，books的值就只能在這個class裡執行而已。
+
 - 第 7 行以及第 8 行的 `@book`，如果把 `@` 拿掉會發生什麼事？為什麼？
+
+無法順利更新指定id的book值，本來只是想更新該本書的價格，少了@會修改到全部的價格。
+
 
 ## Git 題目 (20 分)
 
