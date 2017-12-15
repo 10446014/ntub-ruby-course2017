@@ -126,5 +126,6 @@ puts odd_number_calculator(100) # 得到 2500
 ```
 
 上述程式中，第 2 行的 `reduce` 後面接了 `:+` 的意思是什麼呢?
-
+:+ 的意思是將select內符合條件的元素收集成陣列，然後再由reduce方法讓total和i互動，最規矩的寫法是
+```[*1..n].select{|i| i.odd?}.reduce(0){ |total, i| total + i }```
 
